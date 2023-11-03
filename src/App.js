@@ -55,7 +55,7 @@ export default function App() {
           setIsLoading(true); // Setting the loader to true
           setError(""); // Before starting to fetch again setting the error  back to zero state
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${KEY}&s=${query}`,
+            `https://www.omdbapi.com/?apikey=${KEY}&s=${query}`,
             { signal: controller.signal }
           );
 
